@@ -34,12 +34,12 @@ const Onboarding = () => {
 
     return (
         <>
-            <div className='bg-catskill-white rounded-md w-full h-screen py-20 overflow-auto'>
-                <div className='mx-20 bg-white px-4 py-14'>
+            <div className='flex flex-col justify-center bg-catskill-white rounded-md w-full h-screen py-20 xsm:py-5 overflow-auto'>
+                <div className='mx-20 xsm:mx-4 bg-white px-4 py-14 xsm:px-2 xsm:py-8'>
                     <div className='flex justify-center'>
-                        <img src='logo.png' />
+                        <img src='logo.png' className='w-24' />
                     </div>
-                    <div className='my-10 w-full flex justify-center items-center'>
+                    <div className='my-10 xsm:my-4 xsm:mt-6 w-full flex justify-center items-center'>
                         {ROUTE_STEPS.map((routeStepItem, index) => (
                             <React.Fragment key={`route-item-${index}`}>
                                 <Step
@@ -53,7 +53,7 @@ const Onboarding = () => {
                         ))}
                     </div>
                     <div className='flex justify-center'>
-                        <div className='flex justify-center w-1/2 flex-col space-y-3'>
+                        <div className='flex justify-center w-1/2 xsm:w-full flex-col space-y-3 xsm:space-y-1'>
                             <ActiveComponent />
                         </div>
                     </div>

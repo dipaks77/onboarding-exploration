@@ -23,11 +23,11 @@ const Personalized = () => {
 
     return (
         <>
-            <div className='flex justify-center flex-col items-center my-4 space-y-2'>
-                <p className='text-3xl font-semibold'>How are you planning to use Eden?</p>
-                <p className='text-sm text-gray-500'>We'll streamline your setup experience accordingly.</p>
+            <div className='flex justify-center flex-col items-center my-4 space-y-2 xsm:my-2 xsm:space-y-1'>
+                <p className='text-3xl xsm:text-base font-semibold'>How are you planning to use Eden?</p>
+                <p className='text-sm xsm:text-xs text-gray-500'>We'll streamline your setup experience accordingly.</p>
             </div>
-            <div className='flex space-x-4 justify-center items-center'>
+            <div className='flex space-x-4 xsm:space-x-2 justify-center items-center'>
                 {CARD_DATA.map((cardItem, index) => (
                     <Card
                         key={`card-item-${index}`}
