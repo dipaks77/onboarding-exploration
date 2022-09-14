@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Step from '../components/step';
 import Welcome from './welcome';
+import Workspace from './workspace';
 
 const ROUTE_STEPS = [
     {
@@ -8,7 +9,7 @@ const ROUTE_STEPS = [
         component: Welcome,
     }, {
         step: 2,
-        component: Welcome,
+        component: Workspace,
     }, {
         step: 3,
         component: Welcome,
@@ -21,14 +22,18 @@ const ROUTE_STEPS = [
 const Onboarding = () => {
     const [activeStep, setActiveStep] = useState(1);
 
-    const ActiveComponent = ROUTE_STEPS[activeStep].component;
+    useEffect(() => {
+        setActiveStep(1);
+    }, []);
 
-    const handleRouteChange = (step) => setActiveStep(step);
+    const ActiveComponent = ROUTE_STEPS.find(routeItem => routeItem.step === activeStep).component;
+
+    const handleRouteChange = (step) => { setActiveStep(step); }
 
     return (
         <>
             <div className='bg-catskill-white rounded-md w-full h-screen py-20 overflow-auto'>
-                <div className='mx-10 bg-white px-4 py-14'>
+                <div className='mx-20 bg-white px-4 py-14'>
                     <div className='flex justify-center'>
                         <img src='logo.png' />
                     </div>
@@ -46,7 +51,7 @@ const Onboarding = () => {
                         ))}
                     </div>
                     <div className='flex justify-center'>
-                        <div className='flex justify-center w-96 flex-col space-y-3'>
+                        <div className='flex justify-center w-1/2 flex-col space-y-3'>
                             <ActiveComponent />
                         </div>
                     </div>
