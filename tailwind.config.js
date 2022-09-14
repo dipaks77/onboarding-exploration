@@ -8,7 +8,8 @@ module.exports = {
       colors: {
         // color name source => https://chir.ag/projects/name-that-color/#6195ED
         'catskill-white': '#E9EDF5',
-        'royal-blue': '#664de5'
+        'royal-blue': '#664de5',
+        'white-lilac': '#f8f9fc'
       },
     },
   },
