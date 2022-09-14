@@ -27,8 +27,8 @@ const Onboarding = () => {
 
     return (
         <>
-            <div className='absolute bg-catskill-white rounded-md w-full h-full'>
-                <div className='mx-10 my-20 bg-white px-4 py-20'>
+            <div className='bg-catskill-white rounded-md w-full h-screen py-20 overflow-auto'>
+                <div className='mx-10 bg-white px-4 py-14'>
                     <p className='w-full text-center font-medium text-3xl'>Eden</p>
                     <div className='my-10 w-full flex justify-center items-center'>
                         {ROUTE_STEPS.map((routeStepItem, index) => (

@@ -1,5 +1,6 @@
 import React from 'react';
-import FormField from '../components/formField';
+import Button from '../UI Elements/button';
+import FormField from '../UI Elements/formField';
 
 const Welcome = () => {
     return (
@@ -16,6 +17,7 @@ const Welcome = () => {
                 label='Display Name'
                 placeholder='Steve'
             />
+            <Button label={'Create Workspace'} customStyles='!mt-6' />
         </>
     )
 };
