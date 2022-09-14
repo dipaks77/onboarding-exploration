@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Step from '../components/step';
 import Welcome from './welcome';
 import Workspace from './workspace';
+import Personalized from './personalized';
 
 const ROUTE_STEPS = [
     {
@@ -12,7 +13,7 @@ const ROUTE_STEPS = [
         component: Workspace,
     }, {
         step: 3,
-        component: Welcome,
+        component: Personalized,
     }, {
         step: 4,
         component: Welcome,
