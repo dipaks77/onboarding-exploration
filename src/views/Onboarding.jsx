@@ -3,6 +3,7 @@ import Step from '../components/step';
 import Welcome from './welcome';
 import Workspace from './workspace';
 import Personalized from './personalized';
+import FinalStep from './finalStep';
 
 const ROUTE_STEPS = [
     {
@@ -16,7 +17,7 @@ const ROUTE_STEPS = [
         component: Personalized,
     }, {
         step: 4,
-        component: Welcome,
+        component: FinalStep,
     }
 ];
 

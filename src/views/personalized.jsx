@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '../UI Elements/button';
 import Card from '../UI Elements/card';
 
 const CARD_DATA = [
@@ -36,6 +37,7 @@ const Personalized = () => {
                     />
                 ))}
             </div>
+            <Button label={'Create Workspace'} customStyles='!mt-6 mx-auto w-2/4' />
         </>
     )
 };
