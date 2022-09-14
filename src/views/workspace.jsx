@@ -9,7 +9,7 @@ const Workspace = () => {
                 <p className='text-3xl font-semibold'>Let's set up a home for all your work</p>
                 <p className='text-sm text-gray-500'>You can always create another workspace later.</p>
             </div>
-            <div className='flex flex-col space-y-3 mx-8'>
+            <div className='flex flex-col space-y-3 mx-24'>
                 <FormField
                     label='Workspace Name'
                     placeholder='Eden'

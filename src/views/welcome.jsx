@@ -9,15 +9,17 @@ const Welcome = () => {
                 <p className='text-3xl font-semibold'>Welcome! First things first...</p>
                 <p className='text-sm text-gray-500'>You can always change them later.</p>
             </div>
-            <FormField
-                label='Full Name'
-                placeholder='Steve Jobs'
-            />
-            <FormField
-                label='Display Name'
-                placeholder='Steve'
-            />
-            <Button label={'Create Workspace'} customStyles='!mt-6' />
+            <div className='flex flex-col space-y-3 mx-28'>
+                <FormField
+                    label='Full Name'
+                    placeholder='Steve Jobs'
+                />
+                <FormField
+                    label='Display Name'
+                    placeholder='Steve'
+                />
+                <Button label={'Create Workspace'} customStyles='!mt-6' />
+            </div>
         </>
     )
 };
