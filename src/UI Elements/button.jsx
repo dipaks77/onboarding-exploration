@@ -20,7 +20,7 @@ const Button = ({
 
     return (
         <>
-            <button className={`${getBgColor()} ${getTextColor()} ${customStyles} px-4 py-2 xsm:px-0 rounded-lg xsm:text-xs`}>{label}</button>
+            <button className={`${getBgColor()} ${getTextColor()} ${customStyles} m:px-4 py-2 xsm:px-0 rounded-lg m:text-sm xsm:text-xs`}>{label}</button>
         </>
     )
 };
