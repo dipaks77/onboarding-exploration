@@ -29,7 +29,9 @@ const Onboarding = () => {
         <>
             <div className='bg-catskill-white rounded-md w-full h-screen py-20 overflow-auto'>
                 <div className='mx-10 bg-white px-4 py-14'>
-                    <p className='w-full text-center font-medium text-3xl'>Eden</p>
+                    <div className='flex justify-center'>
+                        <img src='logo.png' />
+                    </div>
                     <div className='my-10 w-full flex justify-center items-center'>
                         {ROUTE_STEPS.map((routeStepItem, index) => (
                             <React.Fragment key={`route-item-${index}`}>
