@@ -1,25 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Step from '../components/step';
-import Welcome from './welcome';
-import Workspace from './workspace';
-import Personalized from './personalized';
-import FinalStep from './finalStep';
-
-const ROUTE_STEPS = [
-    {
-        step: 1,
-        component: Welcome,
-    }, {
-        step: 2,
-        component: Workspace,
-    }, {
-        step: 3,
-        component: Personalized,
-    }, {
-        step: 4,
-        component: FinalStep,
-    }
-];
+import { ROUTE_STEPS } from '../constants/onboarding';
 
 const Onboarding = () => {
     const [activeStep, setActiveStep] = useState(1);

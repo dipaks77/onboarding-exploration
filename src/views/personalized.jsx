@@ -1,18 +1,7 @@
 import React, { useState } from 'react';
+import { CARD_DATA } from '../constants/onboarding';
 import Button from '../UI Elements/button';
 import Card from '../UI Elements/card';
-
-const CARD_DATA = [
-    {
-        header: <img src='user-icon.png' className='w-8' />,
-        title: 'For Myself',
-        content: 'Write better. Think more clearly. Stay organized.'
-    }, {
-        header: <img src='group-icon.png' className='w-8' />,
-        title: 'With my team',
-        content: 'Wikis, docs, tasks & projects, all in one place.'
-    },
-];
 
 const Personalized = () => {
     const [activeCardIndex, setActiveCardIndex] = useState(0);
